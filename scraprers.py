@@ -1,11 +1,9 @@
-# Simple Pong in Python 3 for Beginners
-# By @TokyoEdTech
 
 import turtle
 import os
 
 wn = turtle.Screen()
-wn.title("Pong")
+wn.title("Pong Game by @Roiabr")
 wn.bgcolor("black")
 wn.setup(width=800, height=600)
 wn.tracer(0)
@@ -80,7 +78,7 @@ wn.onkeypress(paddle_a_down, "s")
 wn.onkeypress(paddle_b_up, "Up")
 wn.onkeypress(paddle_b_down, "Down")
 
-# Main game loop
+
 while True:
     wn.update()
     
@@ -88,7 +86,7 @@ while True:
     ball.setx(ball.xcor() + ball.dx)
     ball.sety(ball.ycor() + ball.dy)
 
-    # Border checking
+   
 
     # Top and bottom
     if ball.ycor() > 290:
